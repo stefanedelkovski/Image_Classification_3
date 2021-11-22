@@ -50,12 +50,17 @@ This project contains multiple scripts:
 There are approx. ~69mil. trainable parameters and the neural network architecture of the model is very 
 similar to the Keras model. In the first epoch, the model can't differentiate average and bad quality,
  which results in 66% accuracy on the test data (*2/3 classes*). In the second epoch, the loss drops by
-half, and the model already results in 100% accuracy on the test data. However, using AdamW optimizer
+half, and the model already results in 100% accuracy on the test data. In addition, using AdamW optimizer
 with **5e-4** learning rate, the model achieves 100% accuracy and decent loss within the first epoch.
 
 
-### Final touch
+### Conclusion
 
 The code can be further optimized to generate the data faster, setup GPU to train faster, play with the
 architecture to obtain smaller loss, introduce learning rate scheduler, etc. Having in mind
 that this is a simple task, I assume that the current model fulfills the client's needs. 
+
+### Final Touch
+
+My idea behind these three solutions is to show a variety of knowledge in different approaches, given the
+same problem. I ordered them one to three, least to most complex in terms of coding. Thanks for reading!
